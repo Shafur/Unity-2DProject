@@ -33,7 +33,7 @@ public class PlayerMovement : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         change = Vector3.zero;
         change.x = Input.GetAxisRaw("Horizontal") * Time.deltaTime * speed;
@@ -45,6 +45,10 @@ public class PlayerMovement : MonoBehaviour
         if (currentState == PlayerState.walk || currentState == PlayerState.idle)
         {
             UpdateAnimationAndMove();
+        }
+        if (change != Vector3.zero)
+        {
+            transform.Translate(new Vector3(change.x, change.y));
         }
     }
     private IEnumerator AttackCo()
@@ -78,7 +82,7 @@ public class PlayerMovement : MonoBehaviour
     void MoveCharacter()
     {
         myRigidbody.MovePosition(
-                 transform.position + change * speed * Time.deltaTime);
+                 transform.position + change.normalized * speed * Time.deltaTime);
     }
     public void Knock(float knockTime)
     {
