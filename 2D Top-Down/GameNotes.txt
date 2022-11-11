@@ -1,0 +1,36 @@
+--2D Top-Down
+
+Couch Co-op
+Boss fighting
+Level select like super mario world
+Collectables?
+Create algorithm based around not only P1 but P2
+Classes
+	--Perk tree?
+	--Incentives behind class
+
+Area in map to replay bosses. Killing a boss allows you to unlock their replay(Incentives:In game rewards on harder difficulties)
+
+Collector-- THE FINAL BOSS
+Main City/HUB -- Saloons/MiniGames -- Shops -- Quest Board
+	--Shown to you by someone who reveals to you theres more than one world. This can be where you do all you skill leveling/shopping, and teleport between different levels
+Shop keepers
+
+========================
+------MECHANICS------
+========================
+
+Player Movement
+Camera Movement
+Player/Enemy - Knockback
+Player/Enemy - Hitbox/Health
+Projectiles
+Inventory System/Items ??
+Character Customization (Clothing/Outfits, beard)
+Money/Currencies - Shops/Upgrades
+Branching Dialog System
+Quest Logs
+Boss fights
+Fishing
+
+
