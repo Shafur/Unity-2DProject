@@ -12,9 +12,9 @@ TagManager:
   - 
   - Water
   - UI
-  - 
-  - 
-  - 
+  - Player
+  - Enemy
+  - Obstacle
   - 
   - 
   - 
@@ -44,4 +44,7 @@ TagManager:
     locked: 0
   - name: Player
     uniqueID: 2102818165
+    locked: 0
+  - name: Collision
+    uniqueID: 2976368453
     locked: 0
