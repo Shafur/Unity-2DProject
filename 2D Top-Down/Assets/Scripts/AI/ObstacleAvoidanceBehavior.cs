@@ -13,7 +13,7 @@ public class ObstacleAvoidanceBehavior : SteeringBehavior
     float[] dangersResultTemp = null;
 
 
-    public override (float[] dange, float[] interest) GetSteering(float[] danger, float[] interest, AIData aiData)
+    public override (float[] danger, float[] interest) GetSteering(float[] danger, float[] interest, AIData aiData)
     {
         foreach (Collider2D obstacleCollider in aiData.obstacles)
         {
