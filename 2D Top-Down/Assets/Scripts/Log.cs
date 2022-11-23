@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+//using UnityEngine.InputSystem;
 
 public class Log : Enemy
 {
@@ -11,6 +12,19 @@ public class Log : Enemy
     public Transform homePosition;
     public Animator anim;
     // Start is called before the first frame update
+
+    //private Vector2 pointerInput, movementInput;
+
+   //// private void Update()
+   // {
+   //     pointerInput = GetPointerInput();
+   //     movementInput = movementInput.action.ReadValue<Vector2>().normalized;
+   //
+   //     agentMover.MovementInput = movementInput;
+   //     weaponParent.PointerPosition = pointerInput;
+   //     AnimateCharacter();
+   //
+   // }
     void Start()
     {
         currentState = EnemyState.idle;
