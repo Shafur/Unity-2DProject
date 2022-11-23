@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class EnemyAI : MonoBehaviour
 {
+    [SerializeField]
+    private List<SteeringBehavior> steeringBehaviors;
 
     [SerializeField]
     private List<Detector> detectors;
@@ -26,6 +28,13 @@ public class EnemyAI : MonoBehaviour
         foreach (Detector detector in detectors)
         {
             detector.Detect(aiData);
+        }
+        float[] danger = new float[8];
+        float[] interest = new float[8];
+
+        foreach (SteeringBehavior behavior in steeringBehaviors)
+        {
+            (danger, interest) = behavior.GetSteering(danger, interest, aiData);
         }
     }
 }
