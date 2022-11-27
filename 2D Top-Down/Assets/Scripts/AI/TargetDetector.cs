@@ -41,8 +41,8 @@ public class TargetDetector : Detector
             //The Enemy will not see the player
             colliders = null;
         }
-        //aiData.targets = colliders;
-       // throw new System.NotImplementedException();
+       aiData.targets = colliders;
+       throw new System.NotImplementedException();
     }
     private void OnDrawGizmosSelected()
     {
