@@ -48,3 +48,6 @@ TagManager:
   - name: Collision
     uniqueID: 2976368453
     locked: 0
+  - name: Signs
+    uniqueID: 1357116259
+    locked: 0
