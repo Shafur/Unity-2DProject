@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PatrolEnemy : MonoBehaviour
+public class PatrolEnemy : ObstacleAvoidanceBehavior
 {
 
     public float speed;
@@ -43,4 +43,7 @@ public class PatrolEnemy : MonoBehaviour
         once = false;
         
     }
+
+
 }
+

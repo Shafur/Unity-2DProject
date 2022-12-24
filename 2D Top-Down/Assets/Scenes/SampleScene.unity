@@ -721,6 +721,7 @@ Transform:
   m_Children:
   - {fileID: 1799774219}
   - {fileID: 189447424}
+  - {fileID: 1132042189}
   m_Father: {fileID: 0}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -3348,11 +3349,47 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bef994dd9eadee740a0b505287cd529f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 1.5
+  radius: 2
+  agentColliderSize: 0.6
+  showGizmo: 1
+  speed: 1
   patrolPoints:
   - {fileID: 1799774219}
   - {fileID: 189447424}
-  waitTime: 2
+  - {fileID: 1132042189}
+  - {fileID: 189447424}
+  waitTime: 1.25
+--- !u!1 &1132042188
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1132042189}
+  m_Layer: 0
+  m_Name: Point 3
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1132042189
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1132042188}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 7.56, y: 1.91, z: -45.798214}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 249668971}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1134484687
 GameObject:
   m_ObjectHideFlags: 0
